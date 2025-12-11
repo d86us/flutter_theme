@@ -35,7 +35,7 @@ class CustomTextField extends StatelessWidget {
           enableSuggestions: false,
           decoration: const InputDecoration(labelText: null, hintText: null),
         ),
-        SizedBox(height: paddingBig), // use top-level constant
+        SizedBox(height: paddingBig),
       ],
     );
   }

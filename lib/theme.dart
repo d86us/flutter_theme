@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
 // Basic colors
-const Color foreground = Color.fromARGB(255, 93, 76, 0);
-const Color background = Color.fromARGB(255, 255, 191, 0);
-const Color white = Color.fromARGB(255, 255, 245, 227);
+const Color foreground = Color.fromARGB(255, 0, 4, 255);
+const Color background = Color.fromARGB(255, 99, 193, 255);
+const Color appBarBackground = Color.fromARGB(255, 255, 0, 72);
+const Color white = Color.fromARGB(255, 177, 227, 255);
 const Color red = Color.fromARGB(255, 255, 0, 0);
 const Color green = Color.fromARGB(255, 0, 200, 0);
 
@@ -11,9 +12,9 @@ const Color green = Color.fromARGB(255, 0, 200, 0);
 const double borderRadius = 10.0;
 const double borderWidth = 3.0;
 const double paddingSmall = 10.0;
-const double paddingBig = 20.0;
+const double paddingBig = 30.0;
 const double textSizeMedium = 22.0;
-const double textSizeLarge = 24.0;
+const double textSizeLarge = 32.0;
 
 // Theme
 final ThemeData appTheme = ThemeData(
@@ -23,10 +24,10 @@ final ThemeData appTheme = ThemeData(
     bodyLarge: TextStyle(fontSize: textSizeMedium, color: foreground),
   ),
   appBarTheme: const AppBarTheme(
-    backgroundColor: foreground,
-    foregroundColor: white,
+    backgroundColor: Color.fromARGB(255, 255, 111, 0),
+    foregroundColor: foreground,
     elevation: 2,
-    titleTextStyle: TextStyle(fontSize: textSizeLarge),
+    titleTextStyle: TextStyle(fontSize: textSizeLarge, color: foreground),
   ),
   elevatedButtonTheme: ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
